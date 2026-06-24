@@ -1,9 +1,5 @@
 import { profile } from "@/lib/portfolio";
 
-function isExternalLink(href: string) {
-  return href.startsWith("http");
-}
-
 export function Navbar() {
   return (
     <header className="border-b border-white/10 bg-slate-950/95 text-white">
@@ -11,7 +7,12 @@ export function Navbar() {
         className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-5 sm:flex-row sm:items-center sm:justify-between lg:px-8"
         aria-label="Primary navigation"
       >
-        <a href="#" className="group flex items-center gap-3">
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex items-center gap-3"
+        >
           <span className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/10 text-sm font-bold tracking-wide text-white shadow-sm transition group-hover:border-blue-300/50">
             {profile.initials}
           </span>
@@ -30,8 +31,8 @@ export function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              target={isExternalLink(link.href) ? "_blank" : undefined}
-              rel={isExternalLink(link.href) ? "noreferrer" : undefined}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm font-medium text-slate-300 transition hover:text-white"
             >
               {link.label}
