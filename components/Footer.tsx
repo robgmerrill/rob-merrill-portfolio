@@ -4,7 +4,10 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer id="contact" className="border-t border-slate-200 bg-slate-950 text-white">
+    <footer
+      id="contact"
+      className="border-t border-slate-200 bg-slate-950 text-white"
+    >
       <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-10 sm:flex-row sm:items-center sm:justify-between lg:px-8">
         <div>
           <p className="text-lg font-semibold">{profile.name}</p>
@@ -19,8 +22,6 @@ export function Footer() {
             <a
               key={link.label}
               href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-sm font-medium text-slate-300 transition hover:text-white"
             >
               {link.label}
