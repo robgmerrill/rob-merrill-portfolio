@@ -32,7 +32,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </span>
       </div>
 
-      <p className="mt-4 flex-1 text-sm leading-6 text-slate-600">
+      <p className="mt-4 flex-1 whitespace-pre-line text-sm leading-6 text-slate-600">
         {project.description}
       </p>
 
@@ -53,6 +53,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
             <a
               key={action.label}
               href={action.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-2xl border border-slate-200 px-4 py-2.5 text-center text-sm font-semibold text-slate-700 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               {action.label}

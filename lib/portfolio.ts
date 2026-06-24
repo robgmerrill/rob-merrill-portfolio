@@ -84,16 +84,39 @@ export const summarySections: SummarySection[] = [
 export const projects: Project[] = [
   {
     title: "Event Registration Workflow Automation",
-    description:
-      "A consulting-style implementation project for a professional training company that replaced manual event registration with a lightweight automated workflow.",
+    description: `A real implementation-style workflow automation project for a training organization transitioning from manual spreadsheets and email-based event tracking to a structured registration system.
+
+Focused on:
+- Requirements gathering and workflow design
+- Data modeling and employee import simulation
+- Implementation readiness and launch planning tradeoffs
+
+Simulated a real-world implementation workflow for onboarding and automating event registration processes in a training organization.
+
+Role: Implementation Consultant simulation (post-sale workflow automation)`,
     status: "Completed",
     badges: ["Completed", "Next.js", "Automation", "TypeScript"],
     actions: [
-      { label: "Live Demo", href: "#" },
-      { label: "GitHub Repo", href: "#" },
-      { label: "Case Study", href: "#" },
-      { label: "Architecture", href: "#" },
-      { label: "Technical Tradeoffs", href: "#" },
+      {
+        label: "Live Demo",
+        href: "https://event-registration-workflow.vercel.app/",
+      },
+      {
+        label: "GitHub Repo",
+        href: "https://github.com/robgmerrill/event-registration-workflow",
+      },
+      {
+        label: "Case Study",
+        href: "https://github.com/robgmerrill/event-registration-workflow/blob/main/docs/case-study.md",
+      },
+      {
+        label: "Architecture",
+        href: "https://github.com/robgmerrill/event-registration-workflow/blob/main/docs/architecture.md",
+      },
+      {
+        label: "Technical Tradeoffs",
+        href: "https://github.com/robgmerrill/event-registration-workflow/blob/main/docs/technical-tradeoffs.md",
+      },
       { label: "Loom Walkthrough", href: "#" },
     ],
   },

@@ -1,9 +1,5 @@
 import { footerLinks, profile } from "@/lib/portfolio";
 
-function isExternalLink(href: string) {
-  return href.startsWith("http");
-}
-
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -23,8 +19,8 @@ export function Footer() {
             <a
               key={link.label}
               href={link.href}
-              target={isExternalLink(link.href) ? "_blank" : undefined}
-              rel={isExternalLink(link.href) ? "noreferrer" : undefined}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm font-medium text-slate-300 transition hover:text-white"
             >
               {link.label}
